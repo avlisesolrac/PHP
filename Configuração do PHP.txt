@@ -1,0 +1,42 @@
+Depois de instalado o Apache e colado o php na unidade C:
+
+Configurar o PHP:
+
+Abrir a pasta do PHP e copiar o arquivo 'php.ini-dist' e colar em c:\windows\ e renomear para 'php.ini', abrir esse arquivo com algum editor de texto e alterar a seguinte linha:
+
+extension_dir = "./"
+
+Para:
+
+extension_dir = "C:\php\extensions"
+
+caminho da pasta extensions onde foi instalado/colado a pasta do php na unidade c:
+
+==================================
+
+Configurar o Apache:
+
+Na unidade c:, onde foi instalado o apache, abrir a pasta conf, e abrir o arquivo 'httpd.conf' que é onde fica armazenado as configurações do apache.
+Com o arquivo aberto, procurar por 'DocumentRoot "C:/Apache2/htdocs"' - Que é o caminho por padrão do apache onde ficarão os arquivos dos projetos, mas pode alterar o caminho para uma pasta qualquer no computador
+
+Lista de extensões iniciais:
+
+Procurar por:
+DirectoryIndex index.html index.html.var -> serve para indicar para o apache quais são as extensões iniciais
+
+Pode alterar para:
+
+DirectoryIndex index.html index.php index.htm index.html.var
+
+Acrescentar mais linhas em ScriptAlias:
+
+ScriptAlias /cgi-bin/ "C:/Apache2/cgi-bin/"
+
+Ficando:
+
+ScriptAlias /cgi-bin/ "C:/Apache2/cgi-bin/"
+ScriptAlias /php/ "c:/php/"
+AddType application/x-httpd-php .php
+Action application/x-httpd-php "/php/php.exe"
+
+================================================================
