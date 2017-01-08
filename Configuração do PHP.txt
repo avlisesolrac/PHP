@@ -40,3 +40,29 @@ AddType application/x-httpd-php .php
 Action application/x-httpd-php "/php/php.exe"
 
 ================================================================
+
+Seguintes tags php:
+
+<?php
+//comandos
+?>
+
+OU
+
+<script language="php">
+//comandos
+</script>
+
+OU
+
+<?
+//comandos
+?>
+
+OU
+
+<%
+//comandos
+%>
+
+================================================================
