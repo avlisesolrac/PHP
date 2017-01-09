@@ -14,12 +14,12 @@ $b = 20;
 #print "$c";
 
 /*Operadores de Atribuição, pode ser assim: */
-#$a += $b;
-#$a -= $b;
-#$a *= $b;
-#$a /= $b;
-#$a %= $b;
-$a .= $b;
+#$a += $b; Soma
+#$a -= $b; Subtração
+#$a *= $b; Multiplicação
+#$a /= $b; Divisão
+#$a %= $b; Mod ou resto da divisão
+$a .= $b; # concatenação do valor de uma variável com outra.
 
 print "$a";
 
