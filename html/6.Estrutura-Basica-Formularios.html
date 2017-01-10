@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title> Curso de PHP - HTML</title>
+</head>
+<body>
+
+<!--O atributo action determina o tipo de ação a realizar com o formulário -->
+<!--O atributo method encarregado de especificar a forma no qual o formulário será enviado, POST ou GET -->
+<!--O atributo enctype usado quando for enviar mensagem por email e o valor é "text/plain" -->
+
+<form action="">
+<!--maxlength serve para determinar a quantidade maxima de caracteres podem ser inseridos no campo input-->
+
+Digite seu nome: <br>
+<input type="text" name="nome" size="30" maxlength="30" value="carloseduardo.site11.com">
+
+<br><br>
+
+Digite sua senha: <br>
+<input type="password" name="senha" size="10" maxlength="8">
+
+<br><br>
+
+Digite seu e-mail: <br>
+<input type="email" name="email" size="30" value="Digite seu e-mail">
+
+<br><br>
+
+Digite sua observação: <br>
+<textarea name="observacao" rows="10" cols="32">Texto de exemplo</textarea>
+
+<br><br>
+
+
+<select name="cursos">
+<!-- Usando multiple na tag select, o usuário pode selecionar mais de um elemento, mas para gravar os dados no banco há um sério problema de normalização do banco. -->
+	<option> Lógica </option>
+	<option> Delphi </option>
+	<option> Banco de Dados </option>
+	<option> Mysql </option>
+	<option> Firebird </option>
+	<option selected> Lógica </option>
+	<option> Delphi </option>
+	<option> Banco de Dados </option>
+	<option> Mysql </option>
+	<option> Firebird </option>
+</select>
+
+<br><br>
+
+<!--name precisa ser igual para o mesmo grupo de input radio, caso contrário o usuário poderá escolher mais de uma opção. -->
+<!--checked é usado para deixar uma opção marcada por default -->
+
+<input type="radio" name="linguagem" value="1"> Delphi
+<input type="radio" name="linguagem" value="2"> Java
+<input type="radio" name="linguagem" value="3" checked> PHP
+<input type="radio" name="linguagem" value="4"> MySQL
+
+<br><br>
+
+<input type="checkbox" name="lang"> Delphi
+<input type="checkbox" name="lang"> Java
+<input type="checkbox" name="lang" checked> PHP
+<input type="checkbox" name="lang" checked> MySQL
+
+<br><br>
+
+<input type="submit" name="form-linguagem" value="Enviar">
+<input type="reset" name="apagar-form" value="Default">
+
+<!--hidden usado pelo programador e não é visível para o usuário -->
+<input type="hidden" name="nome" value="carloseduardo.site11.com">
+
+<input type="button" value="Botão sem ação">
+</form>
+
+</body>
+</html>
