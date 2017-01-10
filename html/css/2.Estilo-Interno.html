@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Estudo de CSS</title>
+
+	<style>
+		h1 {color: #66FF00; font-family: verdana; font-variant: small-caps;}
+		h2 {color: rgb(255,160,0); font-family: arial, helvetica, sans-serif;}
+		h3 {color: tomato; font-family: tahoma; font-variant: normal;}
+
+		p.normal {font-weight: normal}
+		p.negrito {font-weight: bold}
+		p.negritoer {font-weight: bolder}
+		p.lighter {font-weight: lighter}
+
+		/*Valores possível na propriedade font: [style] [variant] [weight] [size] [line-height] [family] [caption] [icon] [menu] [message-box] [small-caption] [status-bar] [inherit] */
+
+		p.fonte-com-mais-propriedades {font: italic small-caps bold 12px "Comic Sans MS", sans-serif;}
+		/*OU:
+		p.fonte-com-mais-propriedades {font-family: "Comic Sans MS", sans-serif; font-size: 12px; font-style: italic; font-variant: small-caps; font-weight: bold;}
+		*/
+	</style>
+
+</head>
+<body>
+
+<h1>Estilo color:#66FF00, font-family: verdana</h1>
+<h2>Estilo color: rgb(255,0,0)</h2>
+<h3>Estilo color: tomato</h3>
+
+<h3>Estilos de paragrafos com font-weight:</h3>
+
+<p class="normal">Estilo font-weight: normal</p>
+<p class="negrito">Estilo font-weight: negrito</p>
+<p class="negritoer">Estilo font-weight: negritoer</p>
+<p class="lighter">Estilo font-weight: lighter</p>
+
+<p class="fonte-com-mais-propriedades">Teste da font com varias propriedades</p>
+
+</body>
+</html>
