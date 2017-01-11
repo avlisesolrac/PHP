@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title> Curso de PHP - HTML</title>
+	<style>
+
+		body {color: #003399; background-color: #f6faff; font: 12px arial, helvetica, sans-serif;}
+		#tabela-1 tr td {background-color: #3dd8ff;}
+		#tabela-1 tr.linha td {background-color: #0099FF;}
+
+		#tabela-2 {border-collapse: collapse; width: 100%;}
+		#tabela-2 tr td {border: 2px solid blue;}
+
+		.borda {background: #ccc url(../img/Marcador3.gif);}
+		.borda td {background: #f0ffff; border: 10px solid #87ceeb;}
+
+		a.efeito {font: 12px arial, helvetica, sans-serif; color: #0000ff; padding: 2px 6px; text-decoration: none; display: block;}
+		a.efeito:hover {color: #ffffff; background-color: #000000;}
+
+		#tabela-4 { border-collapse:collapse;}
+		#tabela-4 tr td { width: 100px; border: 1px solid #cccccc; background: #ffffee;}
+	</style>
+</head>
+<body>
+
+<h3>Tabela de Cor-Sim e Cor-Não</h3>
+<table id="tabela-1" border="1px" cellpadding="5px" cellspacing="0">
+	<tr>
+		<td>Valor 1.1</td>
+		<td>Valor 1.2</td>
+		<td>Valor 1.3</td>
+	</tr>
+
+	<tr class="linha">
+		<td>Valor 2.1</td>
+		<td>Valor 2.2</td>
+		<td>Valor 2.3</td>
+	</tr>
+
+	<tr>
+		<td>Valor 3.1</td>
+		<td>Valor 3.2</td>
+		<td>Valor 3.3</td>
+	</tr>
+
+	<tr class="linha">
+		<td>Valor 4.1</td>
+		<td>Valor 4.2</td>
+		<td>Valor 4.3</td>
+	</tr>
+
+	<tr>
+		<td>Valor 5.1</td>
+		<td>Valor 5.2</td>
+		<td>Valor 5.3</td>
+	</tr>
+</table>
+
+<h3>Tabela com Borda Colorida</h3>
+<table id="tabela-2">
+	<tr>
+		<td>Valor 1.1</td>
+		<td>Valor 1.2</td>
+		<td>Valor 1.3</td>
+	</tr>
+
+	<tr>
+		<td>Valor 2.1</td>
+		<td>Valor 2.2</td>
+		<td>Valor 2.3</td>
+	</tr>
+
+	<tr>
+		<td>Valor 3.1</td>
+		<td>Valor 3.2</td>
+		<td>Valor 3.3</td>
+	</tr>
+
+	<tr>
+		<td>Valor 4.1</td>
+		<td>Valor 4.2</td>
+		<td>Valor 4.3</td>
+	</tr>
+
+	<tr>
+		<td>Valor 5.1</td>
+		<td>Valor 5.2</td>
+		<td>Valor 5.3</td>
+	</tr>
+</table>
+
+<h3>Tabela com Imagem</h3>
+<table class="borda" cellspacing="10" width="260">
+	<tr>
+		<td>Valor 1.1</td>
+	</tr>
+
+	<tr>
+		<td>Valor 1.2</td>
+	</tr>
+
+	<tr>
+		<td>Valor 2.1</td>
+	</tr>
+
+	<tr>
+		<td>Valor 2.2</td>
+	</tr>
+</table>
+
+<h3>Tabela com Links</h3>
+<table id="tabela-4">
+	<tr>
+		<td><a class="efeito" href="#"> LINK1 </a></td>
+	</tr>
+
+	<tr>
+		<td><a class="efeito" href="#"> LINK2 </a></td>
+	</tr>
+
+	<tr>
+		<td><a class="efeito" href="#"> LINK3 </a></td>
+	</tr>
+
+	<tr>
+		<td><a class="efeito" href="#"> LINK4 </a></td>
+	</tr>
+</table>
+
+</body>
+</html>
