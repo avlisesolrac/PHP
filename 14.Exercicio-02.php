@@ -37,6 +37,14 @@
 				//Outra forma de exibir o dobro
 				print "O dobro é: ".$_POST['numero']*2;
 
+				//USANDO FUNÇÃO:
+				print "<br><br>Usando função o dobro é: ".calcularDobro($_POST['numero']);
+
+				function calcularDobro($num) {
+					return ($num)*2;
+				}
+
+				
 		?>
 	</body>
 </html>
