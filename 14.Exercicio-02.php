@@ -2,7 +2,7 @@
 <html lan="pt-BR">
 	<head>
 		<meta charset="UTF-8">
-		<title>Exercício - Ler numero inteiro positivo e exibir o dobro dele</title>
+		<title>Exercicio - Ler numero inteiro positivo e exibir o dobro dele</title>
 	</head>
 	<body>
 		
