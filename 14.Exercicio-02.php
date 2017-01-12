@@ -23,6 +23,7 @@
 -->
 
 		<?php
+		
 				//Armazenado o valor digitado no formulario na variável dobro já multiplicado por 2
 				$dobro = $_POST['numero'] * 2;
 
@@ -38,6 +39,7 @@
 				print "O dobro é: ".$_POST['numero']*2;
 
 				//USANDO FUNÇÃO:
+		
 				print "<br><br>Usando função o dobro é: ".calcularDobro($_POST['numero']);
 
 				function calcularDobro($num) {
