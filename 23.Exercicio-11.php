@@ -27,12 +27,27 @@
 			Endereço: ---------- <?=$endereco;?> <br>
 			Estado: ------------ <?=$estado;?> <br>
 			Gênero: ------------ <?=$genero;?> <br>
-			Profissão: --------- <?=$profissao;?> <br>
-			Preferencia1: --------- <?=$preferencia1;?> <br>
-			Preferencia2: --------- <?=$preferencia2;?> <br>
-			Preferencia3: --------- <?=$preferencia3;?> <br>
-			Preferencia4: --------- <?=$preferencia4;?> <br>
-			Preferencia5: --------- <?=$preferencia5;?> <br>
+			Profissão: --------- <?=$profissao;?> <br><br>
+			Preferencias: <br>
+			<?php 
+				if($preferencia1 == "Esporte") {
+					print "Esporte<br>";
+				}
+				if($preferencia2 == "Dança") {
+					print "Dança<br>";
+				}
+				if($preferencia3 == "Música") {
+					print "Música<br>";
+				}
+				if($preferencia4 == "Livros") {
+					print "Livros<br>";
+				}
+				if($preferencia5 == "Carros") {
+					print "Carros<br>";
+				}
+			?>
+
+
 		</h3>
 	</body>
 </html>
