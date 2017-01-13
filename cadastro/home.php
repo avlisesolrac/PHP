@@ -8,8 +8,8 @@ include ("conexao.php")
 </head>
 <body>
 
-<table width="100%" border="1" bordercolor="#000000" cellspacing="0" align="center" cellpadding="0">
-	<tr>
+<table width="100%" border="0" bordercolor="#000000" cellspacing="0" align="center" cellpadding="0">
+	<tr bgcolor="#d3d3d3">
 		<th>ID</th>
 		<th>NOME</th>
 		<th>ENDEREÇO</th>
@@ -34,9 +34,18 @@ include ("conexao.php")
 
 //Atribuido a variável $resultado um array(matriz) que é retornado pela função mysql_fetch_array() de todos os registros da consulta realizada com a variável $query.
 //poderia usar também o mysql_result(),
+		$bgcolor = "#ffffff";
 		while ($resultado = mysql_fetch_array($query)) {
+			
+//Alterna as cores das linhas da tabela entre um registro e outro.
+			if($bgcolor == "#ffffcc") {
+				$bgcolor = "#ffffff";
+			} else {
+				$bgcolor = "#ffffcc";
+			}
+
 			print "
-			<tr>
+			<tr bgcolor=\"$bgcolor\">
 				<td>$resultado[id_cliente]</td>
 				<td>$resultado[nome]</td>
 				<td>$resultado[endereco]</td>
