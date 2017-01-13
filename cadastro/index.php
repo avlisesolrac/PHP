@@ -6,27 +6,52 @@
 <body>
 
 <table width="100%" border="1" cellspacing="0" cellpadding="0">
+<!--Cabeçalho do Layout-->
 	<tr>
 		<td><table width="100%" border="1" cellspacing="0" cellpadding="0">
 				<tr>
 					<td colspan="2"> Cabeçalho </td>
 				</tr>
+<!--Menu do Layout-->
 				<tr>
 					<td width="10%">
 						<table width="100%" border="1" cellspacing="0" cellpadding="0">
 								<tr><td>Menu de opções</td></tr>
-								<tr><td>Home</td></tr>
+								<!--index.php?link=1 será usado pelo método get ao clicar no link para atualizar esta mesma página para inicializar a variável $link-->
+								<tr><td><a href="index.php?link=1">Home</a></td></tr>
 								<tr><td>Inserir</td></tr>
 								<tr><td>Alterar</td></tr>
 								<tr><td>Excluir</td></tr>
 								<tr><td>Consultar</td></tr>
 						</table>
 					 </td>
+<!-- Início do corpo do Layout-->
 					<td> 
 						<table width="100%" border="1" cellspacing="0" cellpadding="0">
-							<tr> <td> Afui fica o corpo do programa</td> </tr>
+							<tr> <td> 
+									<?php
+//Obtido o valor do link clicado pelo usuário e atribuido à $link
+										$link = $_GET['link'];
+//Criado array e no índice 1 atribuido a página home.php que está no mesmo diretório que o index.php
+										$pagina[1] = "home.php";
+
+//Verifica se a variável não está vazia, se tiver algo, proximo if
+										if(!empty($link)) {
+//Verifica se o arquivo que foi atribuido ao array existe, se sim, será feito a inclusão da página do array
+											if(file_exists($pagina[$link])) {
+//include usado para incluir um arquivo dentro de outro
+												include $pagina[$link];
+											} else {
+												print "A página não foi encontrada!";
+											}
+										} else {
+											print "Escolha alguma opção no Menu, pra tirar esse erro!";
+										}
+									?>
+							</td> </tr>
 						</table>
 					</td>
+<!-- Fim do corpo do Layout-->
 				</tr>
 			</table>
 		</td>
