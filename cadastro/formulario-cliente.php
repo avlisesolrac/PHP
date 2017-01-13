@@ -9,7 +9,7 @@
 	<table width="63%" border="1" cellspacing="0" cellpadding="0" bordercolor="#ccc" align="center">
 		<tr>
 			<td>
-			  <form action="" method="post" name="formulario-cliente">
+			  <form action="gravar.php" method="post" name="formulario-cliente">
 			    <table width="100%" border="1" cellspacing="0" cellpadding="0">
 			    	<tr align="center">  <th colspan="6">Cadastro de Clientes</th>  </tr>
 			    	<tr>
