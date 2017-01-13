@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Validação dos dados de um formulário pelo PHP</title>
+</head>
+<body>
+	
+	<h2 style="text-align: center">carloseduardo.site11.com</h2>
+
+	<form action="26.Exercicio-14.php" method="POST">
+		Email: <input type="text" name="nome" size="30" maxlength="30"><p style="color:red; display:inline;" id="erro"></p><br> <br>
+		Endereço: <input type="text" name="endereco" size="40" maxlength="40"> <br><br>
+		Estado: <select name="estado">
+					<option value="UF" selected>UF</option>
+					<option value="AC">AC</option>
+					<option value="AL">AL</option>
+					<option value="AM">AM</option>
+					<option value="AP">AP</option>
+					<option value="BA">BA</option>
+					<option value="CE">CE</option>
+					<option value="DF">DF</option>
+					<option value="ES">ES</option>
+					<option value="GO">GO</option>
+					<option value="MA">MA</option>
+					<option value="MG">MG</option>
+					<option value="MS">MS</option>
+					<option value="MT">MT</option>
+					<option value="PA">PA</option>
+					<option value="PB">PB</option>
+					<option value="PE">PE</option>
+					<option value="PI">PI</option>
+					<option value="PR">PR</option>
+					<option value="RJ">RJ</option>
+					<option value="RN">RN</option>
+					<option value="RS">RS</option>
+					<option value="RR">RR</option>
+					<option value="RO">RO</option>
+					<option value="RN">RN</option>
+					<option value="SC">SC</option>
+					<option value="SE">SE</option>
+					<option value="SP">SP</option>
+					<option value="TO">TO</option>
+				</select>
+		<br><br>
+		<label>Sexo: <input type="radio" name="genero" value="Masculino"> Masculino</label>
+		<label><input type="radio" name="genero" value="Feminino"> Feminino</label><br><br>
+
+		Profissão:
+		<select name="profissao">
+			<option value="profissao" selected> Escolha </option>
+			<option value="programador"> Programador </option>
+			<option value="designer"> Designer </option>
+			<option value="engenheiro"> Engenheiro </option>
+			<option value="medico"> Médico </option>
+		</select> 
+
+		<br><br>
+		
+		Preferências:
+		<input type="checkbox" name="opcao1" value="Esporte"> Esporte
+		<input type="checkbox" name="opcao2" value="Dança"> Dança
+		<input type="checkbox" name="opcao3" value="Música"> Música
+		<input type="checkbox" name="opcao4" value="Livros"> Livros
+		<input type="checkbox" name="opcao5" value="Carros"> Carros <br><br>
+
+		<input type="submit" name="enviado" value="ENVIAR">
+		<input type="reset" value="REDEFINIR">
+	</form>
+	
+</body>
+</html>
