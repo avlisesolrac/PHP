@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Usando JavaScript para validação dos dados de um formulário</title>
+
+	<script>
+	function validaDados(formulario) {
+
+		/*Validação de um formulário com JavaScript*/
+			if(formulario.nome.value == "") {
+				document.getElementById('erro').innerHTML = "Insira um nome, please!"
+				return false;
+
+			} else if (formulario.nome.value.indexOf("@",0) == -1) {
+				alert("Desculpe, está faltando um @ no email!");
+				return false;
+
+			}else if (formulario.endereco.value == "") {
+				alert("O campo endereço é obrigatório!");
+				return false;
+
+			} else if (formulario.estado.selectedIndex == 0) {
+				alert("É necessário escolher um Estado!");
+				return false;
+
+			} else if (!formulario.genero[0].checked && !formulario.genero[1].checked) {
+				alert("Faltou selecionar um sexo!");
+				return false;
+
+			} else if (formulario.profissao.selectedIndex == 0) {
+				alert("Profissão não selecionado!");
+				return false;
+
+			} else if ((!formulario.opcao1.checked) && (!formulario.opcao2.checked) && (!formulario.opcao3.checked) && (!formulario.opcao4.checked) && (!formulario.opcao5.checked)) {
+				alert("Selecione pelo menos uma preferência!");
+				return false;
+			}
+
+		return true;
+	}
+	</script>
+
+</head>
+<body>
+	
+	<h2 style="text-align: center">carloseduardo.site11.com</h2>
+
+	<!-- ONSUBMIT - utilizado para fazer uma validação no formulario por isso usado o 'this' ao clicar no botão enviar/submit, chamando/invocando a função validaDados que tem no script acima. -->
+
+	<form action="25.Exercicio-13.php" method="POST" onsubmit="return validaDados(this)">
+		Email: <input type="text" name="nome" size="30" maxlength="30"><p style="color:red; display:inline;" id="erro"></p><br> <br>
+		Endereço: <input type="text" name="endereco" size="40" maxlength="40"> <br><br>
+		Estado: <select name="estado">
+					<option value="UF" selected>UF</option>
+					<option value="AC">AC</option>
+					<option value="AL">AL</option>
+					<option value="AM">AM</option>
+					<option value="AP">AP</option>
+					<option value="BA">BA</option>
+					<option value="CE">CE</option>
+					<option value="DF">DF</option>
+					<option value="ES">ES</option>
+					<option value="GO">GO</option>
+					<option value="MA">MA</option>
+					<option value="MG">MG</option>
+					<option value="MS">MS</option>
+					<option value="MT">MT</option>
+					<option value="PA">PA</option>
+					<option value="PB">PB</option>
+					<option value="PE">PE</option>
+					<option value="PI">PI</option>
+					<option value="PR">PR</option>
+					<option value="RJ">RJ</option>
+					<option value="RN">RN</option>
+					<option value="RS">RS</option>
+					<option value="RR">RR</option>
+					<option value="RO">RO</option>
+					<option value="RN">RN</option>
+					<option value="SC">SC</option>
+					<option value="SE">SE</option>
+					<option value="SP">SP</option>
+					<option value="TO">TO</option>
+				</select>
+		<br><br>
+		<label>Sexo: <input type="radio" name="genero" value="Masculino"> Masculino</label>
+		<label><input type="radio" name="genero" value="Feminino"> Feminino</label><br><br>
+
+		Profissão:
+		<select name="profissao">
+			<option value="profissao" selected> Escolha </option>
+			<option value="programador"> Programador </option>
+			<option value="designer"> Designer </option>
+			<option value="engenheiro"> Engenheiro </option>
+			<option value="medico"> Médico </option>
+		</select> 
+
+		<br><br>
+		
+		Preferências:
+		<input type="checkbox" name="opcao1" value="Esporte"> Esporte
+		<input type="checkbox" name="opcao2" value="Dança"> Dança
+		<input type="checkbox" name="opcao3" value="Música"> Música
+		<input type="checkbox" name="opcao4" value="Livros"> Livros
+		<input type="checkbox" name="opcao5" value="Carros"> Carros <br><br>
+
+		<input type="submit" name="enviado" value="ENVIAR">
+		<input type="reset" value="REDEFINIR">
+	</form>
+	
+</body>
+</html>
