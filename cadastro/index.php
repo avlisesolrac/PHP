@@ -19,7 +19,7 @@
 								<tr><td>Menu de opções</td></tr>
 								<!--index.php?link=1 será usado pelo método get ao clicar no link para atualizar esta mesma página para inicializar a variável $link-->
 								<tr><td><a href="index.php?link=1">Home</a></td></tr>
-								<tr><td>Inserir</td></tr>
+								<tr><td><a href="index.php?link=2">Inserir</a></td></tr>
 								<tr><td>Alterar</td></tr>
 								<tr><td>Excluir</td></tr>
 								<tr><td>Consultar</td></tr>
@@ -34,6 +34,7 @@
 										$link = $_GET['link'];
 //Criado array e no índice 1 atribuido a página home.php que está no mesmo diretório que o index.php
 										$pagina[1] = "home.php";
+										$pagina[2] = "formulario-cliente.php";
 
 //Verifica se a variável não está vazia, se tiver algo, proximo if
 										if(!empty($link)) {
