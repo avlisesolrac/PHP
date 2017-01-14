@@ -27,7 +27,7 @@ include ("conexao.php")
 	<?php
 
 //Atribuido a variável $sql o comando/string SQL para selecionar todos os registros da tabela cliente
-		$sql = "SELECT * FROM cliente";
+		$sql = "SELECT * FROM cliente ORDER BY nome";
 
 //mysql_query() executa o comando que está na variável $sql
 		$query = mysql_query($sql);

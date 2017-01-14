@@ -21,7 +21,7 @@
 								<tr><td><a href="index.php?link=1">Home</a></td></tr>
 								<tr><td><a href="index.php?link=2">Inserir</a></td></tr>
 								<tr><td><a href="index.php?link=3">Alterar</a></td></tr>
-								<tr><td>Excluir</td></tr>
+								<tr><td><a href="index.php?link=5">Excluir</a></td></tr>
 								<tr><td>Consultar</td></tr>
 						</table>
 					 </td>
@@ -39,6 +39,8 @@
 										$pagina[2] = "formulario-cliente.php";
 										$pagina[3] = "selecionar-alterar.php";
 										$pagina[4] = "formulario-cliente-editar.php";
+										$pagina[5] = "selecionar-excluir.php";
+										$pagina[6] = "formulario-cliente-excluir.php";
 
 //Verifica se a variável não está vazia, se tiver algo, proximo if
 										if(!empty($link)) {
