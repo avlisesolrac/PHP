@@ -1,3 +1,7 @@
+<?php 
+include ("validarcookie.php"); 
+
+?>
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -23,6 +27,7 @@
 								<tr><td><a href="index.php?link=3">Alterar</a></td></tr>
 								<tr><td><a href="index.php?link=5">Excluir</a></td></tr>
 								<tr><td><a href="index.php?link=7">Consultar</a></td></tr>
+								<tr><td><a href="logout.php">Sair</a></td></tr>
 						</table>
 					 </td>
 <!-- Início do corpo do Layout-->
