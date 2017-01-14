@@ -43,23 +43,22 @@ include ("conexao.php")
 			} else {
 				$bgcolor = "#ffffcc";
 			}
-
-			print "
-			<tr bgcolor=\"$bgcolor\">
-				<td>$resultado[id_cliente]</td>
-				<td>$resultado[nome]</td>
-				<td>$resultado[endereco]</td>
-				<td>$resultado[bairro]</td>
-				<td>$resultado[cidade]</td>
-				<td>$resultado[uf]</td>
-				<td>$resultado[cep]</td>
-				<td>$resultado[fone]</td>
-				<td>$resultado[email]</td>
-				<td>$resultado[rg]</td>
-				<td>$resultado[cpf]</td>
-				<td>$resultado[sexo]</td>
-			</tr>
-			";
+				print "
+				<tr bgcolor=\"$bgcolor\">
+					<td>$resultado[id_cliente]</td>
+					<td>$resultado[nome]</td>
+					<td>$resultado[endereco]</td>
+					<td>$resultado[bairro]</td>
+					<td>$resultado[cidade]</td>
+					<td>$resultado[uf]</td>
+					<td>$resultado[cep]</td>
+					<td>$resultado[fone]</td>
+					<td>$resultado[email]</td>
+					<td>$resultado[rg]</td>
+					<td>$resultado[cpf]</td>
+					<td>$resultado[sexo]</td>
+				</tr>
+				";
 		}
 
 
