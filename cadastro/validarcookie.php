@@ -18,8 +18,6 @@
 
       $registros = mysql_num_rows($query);
 
-      print $registros;
-
       //Se retornar zero, isso quer dizer que de alguma forma o usário conseguiu inserir os dados para logar, mas não confere com os dados que tem no BD, sendo assim as variaveis globais cookies serão zeradas
       if($registros == 0) {
         //Desta forma sem um segundo parâmetro, somente o nome do cookie o cookie é destruido na hora
