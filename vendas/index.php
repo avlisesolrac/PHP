@@ -1,4 +1,4 @@
-<?php include ("conexao-bd-mysql.php") ?>
+<?php include ("conexao-bd-mysql.php"); ?>
 
 <!DOCTYPE html>
 <html>
@@ -18,8 +18,8 @@
 		<td width="20%">
 			<table width="100%" align="center" cellspacing="0" cellpadding="0" bgcolor="#993333">
 <!--MENU DE NAVEGAÇÃO-->
-				<tr> <td bgcolor="#990000" align="center"><font color="#ffffff"> CADASTRO </td> </tr>
-				<tr> <td bgcolor="#ffb3b3"> <a href="index.php?link=1">Clientes</a></td> </tr>
+				<tr> <td bgcolor="#990000" align="center"><span style="color: #ffffff; "> CADASTRO </td> </tr>
+				<tr> <td bgcolor="#ffb3b3"> <a href="index.php?link=2">Clientes</a></td> </tr>
 			</table>
 		</td>
 
@@ -32,6 +32,7 @@
 							$link = $_GET["link"];
 							$pagina[1] = "home.php";
 							$pagina[2] = "form-cliente.php";
+							$pagina[3] = "consulta-cliente.php";
 
 							if(!empty($link)) {
 								if(file_exists($pagina[$link])) {
